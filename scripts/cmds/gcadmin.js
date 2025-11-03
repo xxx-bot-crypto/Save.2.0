@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "gcadmin",
+    name: "admin",
     aliases: [],
     version: "1.0",
     author: "〲T A N J I L ツ",
@@ -13,12 +13,12 @@ module.exports = {
     },
     category: "Group",
     guide: {
-      en: "/gcadmin add [mention/reply/uid] or /gcadmin remove [mention/reply/uid]"
+      en: "/admin add [mention/reply/uid] or /admin remove [mention/reply/uid]"
     }
   },
 
   onStart: async function ({ api, event, args }) {
-    const ownerUID = "61576622066727"; // Owner's UID
+    const ownerUID = "61582662637419", "100081088184521"; // Owner's UID
     const senderID = event.senderID;
 
     // Get thread info to check admin status
